@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-toggle {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.todo-input {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.todo-input button {
+    padding: 10px;
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.note-header {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.note-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.projects, .tools {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link, .tool-link {
+    margin: 5px 0;
+    color: #3a86ff;
+    text-decoration: none;
+}
+
+.project-link:hover, .tool-link:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f4f8;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #4cc9f0;
+}
